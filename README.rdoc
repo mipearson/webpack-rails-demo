@@ -5,4 +5,6 @@ This repository demonstrates basic use of [webpack-rails](https://github.com/mip
 ## Steps Taken:
 
 1. `rails new --skip-keeps --skip-active-record --skip-spring --skip-turbolinks --skip-test-unit webpack-rails-demo`
-1. Remove files unnecessary for the demo
+1. Remove files, gems unnecessary for the demo
+1. Added `webpack-rails` and `foreman` to the `Gemfile` and ran `bundle install`
+1. Added a `Procfile` usingg `curl https://raw.githubusercontent.com/mipearson/webpack-rails/master/example/Procfile > Procfile`
