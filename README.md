@@ -4,14 +4,30 @@ This repository demonstrates basic use of [webpack-rails](https://github.com/mip
 
 Even though it demonstrates **webpack-rails** co-existing with sprockets, sprockets is not required or used by **webpack-rails**.
 
-## Steps Taken:
+## Usage
 
-1. Ran `rails new --skip-keeps --skip-active-record --skip-spring --skip-turbolinks --skip-test-unit webpack-rails-demo`
+``` bash
+git clone https://github.com/mipearson/webpack-rails-demo.git
+cd webpack-rails-demo
+bundle install
+npm install
+foreman start
+```
+
+Then open http://localhost:3000 in your browser. If everything is working, you should see "Sprockets works!" and "Webpack works!"
+
+## Steps Taken
+
+1. Created new rails project:
+  `rails new --skip-keeps --skip-active-record --skip-spring --skip-turbolinks --skip-test-unit webpack-rails-demo`
 1. Remove files, gems unnecessary for the demo
 1. Added `webpack-rails` and `foreman` to the `Gemfile` and ran `bundle install`
-1. Downloaded example `Procfile`: `curl https://raw.githubusercontent.com/mipearson/webpack-rails/master/example/Procfile > Procfile`
-1. Downloaded example `package.json`: `curl https://raw.githubusercontent.com/mipearson/webpack-rails/master/example/package.json > package.json`
-1. Downloaded example `config/webpack.conf.js`: `curl https://raw.githubusercontent.com/mipearson/webpack-rails/master/example/webpack.conf.js > config/webpack.conf.js`
+1. Downloaded example `Procfile`:
+  `curl https://raw.githubusercontent.com/mipearson/webpack-rails/master/example/Procfile > Procfile`
+1. Downloaded example `package.json`:
+  `curl https://raw.githubusercontent.com/mipearson/webpack-rails/master/example/package.json > package.json`
+1. Downloaded example `config/webpack.conf.js`:
+  `curl https://raw.githubusercontent.com/mipearson/webpack-rails/master/example/webpack.conf.js > config/webpack.conf.js`
 1. Ran `npm install`
 1. Added `/node_modules` and `/public/webpack` to our `.gitignore`
 1. Added controller, routes and views for "Welcome" page
