@@ -2,7 +2,7 @@
 
 This repository demonstrates basic use of [webpack-rails](https://github.com/mipearson/webpack-rails) in a Rails 4.2 application.
 
-Even though it demonstrates **webpack-rails** co-existing with sprockets, sprockets is not required or used by **webpack-rails**.
+Even though it demonstrates **webpack-rails** coexisting with sprockets, sprockets is not required or used by **webpack-rails**.
 
 ## Usage
 
@@ -19,7 +19,7 @@ Then open http://localhost:3000 in your browser. If everything is working, you s
 ## Steps Taken
 
 1. Created new rails project:
-  `rails new --skip-keeps --skip-active-record --skip-spring --skip-turbolinks --skip-test-unit webpack-rails-demo`
+    `rails new --skip-keeps --skip-active-record --skip-spring --skip-turbolinks --skip-test-unit webpack-rails-demo`
 1. Remove files, gems unnecessary for the demo
 1. Added `webpack-rails` and `foreman` to the `Gemfile` and ran `bundle install`
 1. Downloaded example `Procfile`:
@@ -32,7 +32,7 @@ Then open http://localhost:3000 in your browser. If everything is working, you s
 1. Added `/node_modules` and `/public/webpack` to our `.gitignore`
 1. Added controller, routes and views for "Welcome" page
 1. Added sprockets-based javascript for "Welcome" page
-1. Add `webpack/application.js` and modify `config/webpack.config.js` to recognize new entry point
-1. Add `*webpack_asset_paths` to `index.html.erb` to load webpacked javascript
-1. Run `foreman start`
-1. Open http://localhost:3000, confirm that both Sprockets & Webpack are loaded
+1. Added `webpack/application.js` and modified `config/webpack.config.js` to recognize new entry point
+1. Added `*webpack_asset_paths` to `index.html.erb` to load webpacked javascript
+1. Ran `foreman start`
+1. Open http://localhost:3000, confirmed that both Sprockets & Webpack are loaded
