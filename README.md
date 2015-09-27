@@ -14,7 +14,7 @@ npm install
 foreman start
 ```
 
-Then open http://localhost:3000 in your browser. If everything is working, you should see "Sprockets works!" and "Webpack works!"
+Then open [localhost:3000](http://localhost:3000) in your browser. If everything is working, you should see "Sprockets works!" and "Webpack works!"
 
 ## Steps Taken
 
@@ -35,4 +35,4 @@ Then open http://localhost:3000 in your browser. If everything is working, you s
 1. Added `webpack/application.js` and modified `config/webpack.config.js` to recognize new entry point
 1. Added `*webpack_asset_paths` to `index.html.erb` to load webpacked javascript
 1. Ran `foreman start`
-1. Open http://localhost:3000, confirmed that both Sprockets & Webpack are loaded
+1. Opened [localhost:3000](http://localhost:3000), confirmed that both Sprockets & Webpack are loaded
