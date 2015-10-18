@@ -21,18 +21,11 @@ Then open [localhost:3000](http://localhost:3000) in your browser. If everything
 1. Created new rails project:
     `rails new --skip-keeps --skip-active-record --skip-spring --skip-turbolinks --skip-test-unit webpack-rails-demo`
 1. Remove files, gems unnecessary for the demo
-1. Added `webpack-rails` and `foreman` to the `Gemfile` and ran `bundle install`
-1. Downloaded example `Procfile`:
-  `curl https://raw.githubusercontent.com/mipearson/webpack-rails/master/example/Procfile > Procfile`
-1. Downloaded example `package.json`:
-  `curl https://raw.githubusercontent.com/mipearson/webpack-rails/master/example/package.json > package.json`
-1. Downloaded example `config/webpack.conf.js`:
-  `curl https://raw.githubusercontent.com/mipearson/webpack-rails/master/example/webpack.conf.js > config/webpack.conf.js`
-1. Ran `npm install`
-1. Added `/node_modules` and `/public/webpack` to our `.gitignore`
+1. Added `webpack-rails` to the `Gemfile` and ran `bundle install`
+1. Ran `bundle exec rails generate webpack_rails:install`
 1. Added controller, routes and views for "Welcome" page
 1. Added sprockets-based javascript for "Welcome" page
-1. Added `webpack/application.js` and modified `config/webpack.config.js` to recognize new entry point
+1. Edited `webpack/application.js`
 1. Added `*webpack_asset_paths` to `index.html.erb` to load webpacked javascript
 1. Ran `foreman start`
 1. Opened [localhost:3000](http://localhost:3000), confirmed that both Sprockets & Webpack are loaded

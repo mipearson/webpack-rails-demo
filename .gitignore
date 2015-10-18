@@ -12,6 +12,6 @@
 !/log/.keep
 /tmp
 
-# Don't commit node_modules (vendored npm bits) or built assets
+# Added by webpack-rails
 /node_modules
 /public/webpack
